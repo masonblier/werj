@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+var path = require('path');
+var mc = require('minicolor');
+var connect = require('connect');
+var Assets = require('../lib/assets');
+
+connect(
+  Assets.middleware(),
+  connect.static(require('path').join(__dirname, '../public')),
+  function(req,res){
+    res.end(Assets.indexFile());
+  }
+).listen(8750);
+process.stdout.write(mc.grey("listening at http://localhost:8750/")+"\n");

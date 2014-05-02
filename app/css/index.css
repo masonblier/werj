@@ -1,0 +1,136 @@
+/*= require font-awesome */
+/*= require vendor/codemirror */
+/*= require vendor/tomorrow-night-eighties */
+/*= require game-interface */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #d4d4d4;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  overflow: hidden;
+}
+a:focus, input:focus, textarea:focus,
+select:focus, button:focus {
+  outline: none;
+}
+
+/* container */
+#container {
+  position: absolute;
+  top: 42px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* pause-overlay */
+.pause-overlay {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:rgba(20,20,20,0.8);
+}
+.pause-message {
+  cursor: default;
+  -webkit-user-select: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 0 0 5px #111;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -40px;
+  margin-top: -22px;
+}
+
+/* navbar */
+.navbar {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 41px;
+  background: #101010;
+  box-shadow: 0 0 3px #000;
+  border-bottom: 1px solid #303030;
+}
+.navbar > a {
+  margin: 0;
+  color: #f0f0f0;
+  padding: 0 12px;
+  font-size: 1.8em;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar > a > small {
+  padding: 2px 0;
+  position: relative;
+  top: -2px;
+  color: #acefac;
+}
+
+/* form elements */
+input, textarea, select, button {
+  color: #f0f0f0;
+  border: 1px solid #303030;
+  background: #1b1b1b;
+  padding: 5px 12px 7px 12px;
+  cursor: pointer;
+}
+button:hover, button:active {
+  padding-top: 5px;
+  background: #222222;
+}
+button:active {
+  padding: 6px 12px;
+  box-shadow: 0 1px 2px #101010 inset;
+}
+
+/* modal */
+#modal {
+  position: absolute;
+  z-index: 21;
+  width: 400px;
+  min-height: 100px;
+  top: 50%;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -200px;
+  background: #101010;
+  border: 1px solid #303030;
+  box-shadow: 0 0 5px #000;
+}
+.modal-title {
+  position: absolute;
+  height: 23px;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 1px solid #222222;
+  font-size: 1.2em;
+  padding: 6px 12px;
+}
+.modal-body {
+  margin: 36px 0;
+  padding: 8px 12px;
+}
+.modal-actions {
+  position: absolute;
+  height: 31px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #222222;
+  text-align: right;
+  padding: 2px 12px;
+}

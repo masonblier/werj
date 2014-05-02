@@ -1,0 +1,11 @@
+{
+  "name": "werj",
+  "description": "surf/bhop game",
+  "version": "0.0.1",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "latest",
+    "minicolor": "latest",
+    "accets": "latest"
+  }
+}

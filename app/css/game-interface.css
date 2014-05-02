@@ -1,0 +1,47 @@
+/* three-container */
+.three-container {
+  position: absolute;
+  top: 42px; bottom: 250px;
+  left: 0; right: 400px;
+}
+
+/* game-terminal */
+.game-terminal {
+  position: absolute;
+  top: 42px; bottom: 250px;
+  right: 0;
+  width: 400px;
+  background: #111111;
+}
+.game-terminal-header {
+  padding: 6px 12px;
+  border-bottom: 1px solid #222;
+}
+.game-terminal-header .title {
+  float: left;
+  font-size: 1.5em;
+}
+.game-terminal-header .title > small {
+  color: #aaa;
+}
+.game-terminal-controls {
+  text-align: right;
+}
+.game-terminal-editor {
+  position: absolute;
+  top: 44px;
+  bottom: 0;
+  left: 0; right: 0;
+}
+.game-terminal-editor .CodeMirror {
+  height: 100%;
+}
+
+/* game-shelf */
+.game-shelf {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  height: 250px;
+  background: #111111;
+}
